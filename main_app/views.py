@@ -15,7 +15,24 @@ def get_finch_data():
             'description': 'Brightly colored bird with distinctive head colors.',
             'habitat': 'Northern Australia, particularly in savannas.'
         },
-        # Add more finches as needed
+         {
+            'name': 'Java Sparrow',
+            'scientific_name': 'Lonchura oryzivora',
+            'description': 'Small bird with gray plumage and pink beak.',
+            'habitat': 'Grasslands, agricultural fields, and urban areas of Java.'
+        },
+        {
+            'name': 'Society Finch',
+            'scientific_name': 'Lonchura domestica',
+            'description': 'Small and social bird known for its singing ability.',
+            'habitat': 'Originally from Southeast Asia, now kept as a pet worldwide.'
+        },
+        {
+            'name': 'Star Finch',
+            'scientific_name': 'Neochmia ruficauda',
+            'description': 'Colorful bird with red head and tail.',
+            'habitat': 'Open woodlands, grasslands, and scrublands of Australia.'
+        }
     ]
     return finches
 
@@ -24,3 +41,6 @@ def home(request):
     
 def about(request):
     return render(request,'about.html')
+
+def finches(request):
+    return render(request,'finches.html',{'finches': finches})
