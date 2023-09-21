@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% block content %}
 
 <h1>Finch List</h1>
@@ -7,10 +8,10 @@
   <div class="card">
     <div class="card-content">
       <span class="card-title">{{ finch.name }}</span>
-      <p>name: {{ finches.name }}</p>
-      <p>scientific_name: {{ finch.scientific_name}}</p>
-      <p>description: {{ finch.description}}</p>
-      <p>habitat: {{ finch.habitat}}</p>
+      <p>name: {{ finch.name }}</p>
+      <p>scientific_name: {{ finch.scientific_name }}</p>
+      <p>description: {{ finch.description }}</p>
+      <p>habitat: {{ finch.habitat }}</p>
     </div>
   </div>
 {% endfor %}
