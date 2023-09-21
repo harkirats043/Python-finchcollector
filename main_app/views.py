@@ -43,4 +43,4 @@ def about(request):
     return render(request,'about.html')
 
 def finches(request):
-    return render(request,'finches.html',{'finches': finches})
+    return render(request,'finches/finches.html')
