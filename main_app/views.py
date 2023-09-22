@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Finch
 
 # Create your views here.
 def get_finch_data():
@@ -18,4 +19,5 @@ def about(request):
     return render(request,'about.html')
 
 def finches(request):
+    Finches = Finch.objects.all()
     return render(request,'finches/finches.html',{'finches':finches})
